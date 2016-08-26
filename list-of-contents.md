@@ -7,16 +7,20 @@
 - What is this whole Virtual DOM thing?
 - How does JSX Work?
 - Component Hierarchy
-- Project Setup
 - Quick Note on ES6 Imports
-- Building Your First ReactJS Component
+- Starter Kit Setup
+- **Exercise:** Building Your First ReactJS Component
 
 
 ### Chapter 2: Working with ReactJS Components
 
 - Component Props
 - `CreateClass` vs. `Extends`
-- 
+- Passing Data Between Components
+- Making AJAX calls in ReactJS Apps
+- **Exercise:** React Blog Reader
 
 
 ### Chapter 3: Building A Chat App with React & WebSockets
+
+- ...
