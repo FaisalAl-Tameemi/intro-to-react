@@ -44,8 +44,3 @@ Spend a bit of time writing regular HTML code within the `render` method in this
 
 As we previously discussed, all valid HTML is valid JSX.
 
-----
-
-## Resources & Other Links
-
-...
