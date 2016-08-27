@@ -16,6 +16,6 @@
     * [createClass vs extends](chapter_2/__20_create_class_vs_extends.md)
     * [Passing Data Between Components](chapter_2/__30_passing_data_between_components.md)
     * [AJAX In ReactJS](chapter_2/__40_ajax_axios.md)
-* [React Blog Reader Exercise](project/README.md)
+* [Project: ReactJS Blog Viewer](project/README.md)
 * [Next Steps](next-steps.md)
 
