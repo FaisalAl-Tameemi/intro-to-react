@@ -16,3 +16,6 @@ Follow the steps below to setup your local copy of the starter kit that we will 
         npm start
 
 * Step 4 - Visit `http://localhost:3000` in your browser to view the page
+
+
+If you're up and running, you should now see a webpage with the text "Hello React :)".
