@@ -12,19 +12,24 @@ These books are meant to be growing entities rather than static content, i.e. fe
 
 ## About The Author
 
+Hello :)
 
+I'm Faisal. I currently teach programming @ Lighthouse Labs and I'd like to start sharing guides about doing web development work.
+
+Below is a snapshot of my info and how to reach me.
 
 
 ```javascript
 {
     name: 'Faisal Al-Tameemi',
-    work: 'Educator & Technology Architect',
+    work: 'Technology Architect & Educator',
     city: 'Toronto',
     country: 'Canada',
     interests: ['Education', 'Engineering', 'Data', 'Design', 'Entrepreneurship'],
     github_url: '',
     linkedin_url: '',
     twitter_url: 'http://twitter.com/FaisalAlTameemi',
+    blog_url: '',
     email: 'faisal@lighthouselabs.ca'
 }
 ```
