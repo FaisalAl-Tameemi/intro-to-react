@@ -24,7 +24,7 @@ These books are meant to be growing entities rather than static content, i.e. fe
     interests: ['Education', 'Engineering', 'Data', 'Design', 'Entrepreneurship'],
     github_url: '',
     linkedin_url: '',
-    twitter_handle: 'FaisalAlTameemi',
+    twitter_url: 'http://twitter.com/FaisalAlTameemi',
     email: 'faisal@lighthouselabs.ca'
 }
 ```
