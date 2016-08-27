@@ -35,6 +35,8 @@ class App extends React.Component{
     }
 }
 
+// allow import of this component in other files
+// aka export the component
 export default App;
 ```
 
