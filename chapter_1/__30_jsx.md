@@ -43,9 +43,13 @@ It would be way too much writing to represent the simplest UI elements.
 
 ## Writing In JSX
 
-...
+In order to 
 
 
 ----
 
 ## Resources & Other Links
+
+- #### [JSX In Depth - Facebook](https://facebook.github.io/react/docs/jsx-in-depth.html)
+
+
