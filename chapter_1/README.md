@@ -1,6 +1,6 @@
-## Intro To ReactJS
+# Intro To ReactJS
 
-In this chapter we will discuss:
+**In this chapter we will discuss:**
 
 - What is ReactJS?
 
