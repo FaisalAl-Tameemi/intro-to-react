@@ -26,10 +26,8 @@ In there you will notice that it doesn't actually content the "Hello World" mess
 
 The ReactJS code is attaching the entire app to the following `div`:
 
-```
-
+```html
 <div id="react-root"></div>
-
 ```
 
 And through the JS tool, Webpack, the entire app is being bundled into a single file when your run `npm start`.
