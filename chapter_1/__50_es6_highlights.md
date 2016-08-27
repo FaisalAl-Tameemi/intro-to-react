@@ -1,9 +1,6 @@
-# ES6 Highlights
+# Classes in ES6 (ES2015)
 
-
-
-
-
+...
 
 
 ----

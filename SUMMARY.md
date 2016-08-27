@@ -8,7 +8,7 @@
     * [The Virtual DOM](chapter_1/__20_virtual_dom.md)
     * [JSX](chapter_1/__30_jsx.md)
     * [Component Hierarchy](chapter_1/__40_component_hierarchy.md)
-    * [ES6 Highlights](chapter_1/__50_es6_highlights.md)
+    * [ES6 Classes](chapter_1/__50_es6_highlights.md)
     * [Starter Kit Setup](chapter_1/__60_starter_kit_setup.md)
     * [Your First React Component](chapter_1/__70_first_component_exercise.md)
 * [Chapter 2: Working with ReactJS Components](chapter_2/README.md)
