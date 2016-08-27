@@ -14,7 +14,7 @@ These books are meant to be growing entities rather than static content, i.e. fe
 
 Hello :)
 
-I'm Faisal. I currently teach programming @ [Lighthouse Labs](http://lighthouselabs.ca) and I'd like to start sharing guides about doing web development work.
+I'm Faisal. I'm currently working as Head Instructor @ [Lighthouse Labs](http://lighthouselabs.ca) and I'd like to start sharing short guides on web development for Entrepreneurs, Engineers, Educators and Designers.
 
 Below is a snapshot of my info and how to reach me.
 
