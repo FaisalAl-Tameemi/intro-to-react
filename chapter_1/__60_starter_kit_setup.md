@@ -1,10 +1,6 @@
 # Starter Kit Setup
 
-
-
-
-
-
+...
 
 ---- 
 
