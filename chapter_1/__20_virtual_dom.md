@@ -1,6 +1,6 @@
 # The Virtual DOM
 
-
+![png](https://cl.ly/1g2l300L0i2J/Image%202016-08-26%20at%209.42.12%20PM.jpg "virtual_dom")
 
 ----
 
