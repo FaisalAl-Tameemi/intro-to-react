@@ -37,4 +37,5 @@ You could also argue that `<TextContent />` doesn't have to be a whole new compo
 
 ## Resources & Other Links
 
-- #### [Reusable Components - Facebook](https://facebook.github.io/react/docs/reusable-components.html)
+- #### [Thinking in React](https://facebook.github.io/react/docs/thinking-in-react.html)
+- #### [Reusable Components](https://facebook.github.io/react/docs/reusable-components.html)
