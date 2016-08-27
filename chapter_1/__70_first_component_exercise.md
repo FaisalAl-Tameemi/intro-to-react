@@ -72,4 +72,6 @@ render(){
 }
 ```
 
+In the next chapter we will get into more detail about working React components and learn about the component lifecycle.
+
 
