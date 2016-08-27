@@ -19,8 +19,3 @@
 - Passing Data Between Components
 - Making AJAX calls in ReactJS Apps
 - **Exercise:** React Blog Reader
-
-
-### Chapter 3: Building A Chat App with React & WebSockets
-
-- ...
