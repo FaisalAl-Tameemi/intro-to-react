@@ -20,10 +20,15 @@ ReactDOM.render(<App />,
 By inspecting the `/src/App.jsx` file
 
 ```javascript
+// load the react library
 import React from 'react';
 
-class App extends Component{
+// create a class which inherits 
+// from React's component class
+class App extends React.Component{
+    // a react component method
     render(){
+        // return what you want to display
         return(
             <h1>Hello React :)</h1>
         );
