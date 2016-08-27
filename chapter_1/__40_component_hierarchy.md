@@ -27,8 +27,11 @@ Since this seems to be a UI component that we can reuse in other pages of our we
 
 If we want to, we can go even further by building 2 more components that correspond to the elements listed above. The first we will call `<TextContent />` and the second `<VideoPlayer />`. 
 
-
 ![png](https://cl.ly/2l0t36261N1S/Image%202016-08-26%20at%2011.15.00%20PM.png "labeled_breakdown")
+
+
+You could also argue that `<TextContent />` doesn't have to be a whole new compoent as we can simply use HTML tags like `<h1>` for the title and `<p>` for the description; we would then simply keep the title and the description as a part of the main `<VideoContentHighlight />` component which in turn uses a combination of HTML tags and our custom built component for the video player.
+
 
 ----
 
