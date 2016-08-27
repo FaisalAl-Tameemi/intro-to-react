@@ -13,6 +13,12 @@ ReactDOM.render(<App />,
                 document.getElementById('react-root'));
 ```
 
+----
+
+## The App Component
+
+
+
 
 ----
 
