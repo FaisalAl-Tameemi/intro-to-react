@@ -7,11 +7,14 @@ ReactJS is a Javascript library built, by Facebook, to solve the problem of buil
 
 Many companies now use ReactJS in production. Checkout the resources provided below for more on this.
 
+----
 
 ## Thinking In React
 
 ...
 
+
+----
 
 
 ## React vs. Angular vs. ...
@@ -22,10 +25,12 @@ Many companies now use ReactJS in production. Checkout the resources provided be
 ...
 
 
-### Can I Use ReactJS instead of AngularJS?
+### Can I Build Entire Websites With Only ReactJS?
 
 ...
 
+
+----
 
 
 ## Resources and Other Links
