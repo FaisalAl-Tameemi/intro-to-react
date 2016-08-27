@@ -40,6 +40,8 @@ It would be way too much writing to represent the simplest UI elements.
 
 We will practice writing JSX code as we get started with building our first React component.
 
+Tools such as **Babel** (see resources below) are then used to transpile (aka fancy convert) JSX code into valid Javascript (ES5 to be specific).
+
 ----
 
 ## Resources & Other Links
