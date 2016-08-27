@@ -17,7 +17,21 @@ ReactDOM.render(<App />,
 
 ## The App Component
 
-....
+By inspecting the `/src/App.jsx` file
+
+```javascript
+import React from 'react';
+
+class App extends Component{
+    render(){
+        return(
+            <h1>Hello React :)</h1>
+        );
+    }
+}
+
+export default App;
+```
 
 
 ----
