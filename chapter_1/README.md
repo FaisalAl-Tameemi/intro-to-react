@@ -10,7 +10,7 @@ In this chapter we will discuss:
 
 - Component Hierarchy
 
-- Quick Note on ES6 Imports
+- ES6 Highlights
 
 - Starter Kit Setup
 
