@@ -38,13 +38,7 @@ It would be way too much writing to represent the simplest UI elements.
 
 **The great part is that all valid HTML code is valid JSX.**
 
-----
-
-
-## Writing In JSX
-
-In order to 
-
+We will practice writing JSX code as we get started with building our first React component.
 
 ----
 
