@@ -44,3 +44,32 @@ Spend a bit of time writing regular HTML code within the `render` method in this
 
 As we previously discussed, all valid HTML is valid JSX.
 
+You may notice that if you tried to write the following in your render method
+
+```javascript
+render(){
+    return(
+        <h1>Hello React :)</h1>
+        <p>Some more text here</p>
+    );
+}
+```
+
+then you will get an error from React complaining about the fact that you have 2 sibling nodes (2 tags with the same level of depth and the same parent). 
+
+This happens because React treats each component as a single tag to be called from other components.
+
+The way to get around this is by wrapping up all of the contents of your component in a `div` or another tag:
+
+```javascript
+render(){
+    return(
+        <div>
+            <h1>Hello React :)</h1>
+            <p>Some more text here</p>
+        </div>
+    );
+}
+```
+
+
