@@ -42,6 +42,7 @@ export default App;
 
 Spend a bit of time writing regular HTML code within the `render` method in this component and see how your page changes.
 
+As we previously discussed, all valid HTML is valid JSX.
 
 ----
 
