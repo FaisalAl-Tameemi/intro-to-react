@@ -12,11 +12,15 @@ These books are meant to be growing entities rather than static content, i.e. fe
 
 ## About The Author
 
+
+
+
 ```javascript
 {
     name: 'Faisal Al-Tameemi',
-    work: 'Head Instructor at Lighthouse Labs Toronto',
-    location: 'Toronto, Canada',
+    work: 'Educator & Technology Architect',
+    city: 'Toronto',
+    country: 'Canada',
     interests: ['Education', 'Engineering', 'Data', 'Design', 'Entrepreneurship'],
     github_url: '',
     linkedin_url: '',
