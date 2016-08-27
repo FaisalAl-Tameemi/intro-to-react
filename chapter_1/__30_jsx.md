@@ -48,4 +48,4 @@ Tools such as **Babel** (see resources below) are then used to transpile (aka fa
 
 - #### [JSX In Depth - Facebook](https://facebook.github.io/react/docs/jsx-in-depth.html)
 - #### [Babel for JSX](https://babeljs.io/docs/plugins/transform-react-jsx/)
-
+- #### [React Dev Tools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi?hl=en)
