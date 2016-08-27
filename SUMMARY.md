@@ -12,6 +12,7 @@
     * [Starter Kit Setup](chapter_1/__60_starter_kit_setup.md)
     * [Your First React Component](chapter_1/__70_first_component_exercise.md)
 * [Chapter 2: Working with ReactJS Components](chapter_2/README.md)
+    * [Component Lifecycle](chapter_2/__05_component_lifecycle.md)
     * [Component Properties](chapter_2/__10_component_props.md)
     * [createClass vs extends](chapter_2/__20_create_class_vs_extends.md)
     * [Passing Data Between Components](chapter_2/__30_passing_data_between_components.md)
