@@ -36,6 +36,7 @@ Now imagine building an entire application like that.
 
 It would be way too much writing to represent the simplest UI elements.
 
+**The great part is that all valid HTML code is valid JSX.**
 
 ----
 
