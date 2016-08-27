@@ -1,4 +1,3 @@
 # Introduction
 
-A super brief intro to ReactJS
-
+A super brief intro to ReactJS.
