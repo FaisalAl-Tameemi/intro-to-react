@@ -7,7 +7,7 @@ Follow the steps below to setup your local copy of the starter kit that we will 
         git clone https://github.com/lighthouse-labs/react-simple-boilerplate
 
 * Step 2 - Install the required dependencies
-    
+
         cd react-simple-boilerplate
         npm install
 

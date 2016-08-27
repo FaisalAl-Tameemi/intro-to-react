@@ -7,27 +7,15 @@ ReactJS is a Javascript library built, by Facebook, to solve the problem of buil
 
 Many companies now use ReactJS in production. Checkout the resources provided below for more on this.
 
-----
-
-## Thinking In React
-
-...
-
 
 ----
 
 
-## React vs. Angular vs. ...
+## React vs. Angular
 
+React is a library and Angular is a framework which means they're not directly comparable. 
 
-### Can I Use ReactJS instead of AngularJS?
-
-...
-
-
-### Can I Build Entire Websites With Only ReactJS?
-
-...
+#### [The Tie Breaker - Article](https://www.airpair.com/angularjs/posts/angular-vs-react-the-tie-breaker)
 
 
 ----
