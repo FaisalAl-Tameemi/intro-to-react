@@ -15,7 +15,7 @@ ReactDOM.render(<App />,
 
 ----
 
-## The App Component
+## The `App` Component
 
 By inspecting the `/src/App.jsx` file
 
