@@ -35,4 +35,4 @@ Many companies now use ReactJS in production. Checkout the resources provided be
 
 ## Resources and Other Links
 
-#### [Sites Using ReactJS](https://github.com/facebook/react/wiki/Sites-Using-React)
+- #### [Sites Using ReactJS](https://github.com/facebook/react/wiki/Sites-Using-React)
