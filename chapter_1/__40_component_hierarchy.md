@@ -9,7 +9,7 @@ It is also important to note that this isn't the only way to build scalable web 
 
 ## Components Breakdown
 
-Let's practice this way of thinking about our web applications. 
+Let's quickly practice this way of thinking about our web applications. 
 
 In a scenario where we have to build a simple feature section of a web page with a video player on the side along the lines of:
 
