@@ -40,7 +40,7 @@ class App extends React.Component{
 export default App;
 ```
 
-Spend a bit of time writing HTML code within the `render` method in this component and see how your page changes.
+Spend a bit of time writing regular HTML code within the `render` method in this component and see how your page changes.
 
 
 ----
