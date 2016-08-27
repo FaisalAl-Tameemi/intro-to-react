@@ -25,7 +25,7 @@ We notice that there are 2 main elements in this mockup:
 
 Since this seems to be a UI component that we can reuse in other pages of our website, we can turn the whole thing into a single component, `<VideoContentHighlight />`. 
 
-If we want to, we can go even further by building 2 more components that correspond to the elements listed above. The first we will call `<TextContent />` and the second '<VideoPlayer />'. 
+If we want to, we can go even further by building 2 more components that correspond to the elements listed above. The first we will call `<TextContent />` and the second `<VideoPlayer />`. 
 
 
 ![png](https://cl.ly/2l0t36261N1S/Image%202016-08-26%20at%2011.15.00%20PM.png "labeled_breakdown")
