@@ -23,7 +23,7 @@ Below is a snapshot of my info and how to reach me.
 ```javascript
 {
     name: 'Faisal Al-Tameemi',
-    work: 'Technology Architect & Educator',
+    work: 'Head Instructor, Lighthouse Labs',
     city: 'Toronto',
     country: 'Canada',
     interests: ['Education', 'Engineering', 'Data', 'Design', 'Entrepreneurship'],
