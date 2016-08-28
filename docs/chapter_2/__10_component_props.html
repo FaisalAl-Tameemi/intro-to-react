@@ -186,7 +186,7 @@
                 <a href="../chapter_1/__40_component_hierarchy.html">
             
                     
-                    Component Hierarchy
+                    Components
             
                 </a>
             
@@ -284,19 +284,6 @@
             
                     
                     createClass vs extends
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="__30_passing_data_between_components.html">
-            
-                <a href="__30_passing_data_between_components.html">
-            
-                    
-                    Passing Data Between Components
             
                 </a>
             
@@ -432,7 +419,15 @@
 <p>Now, let&apos;s say we wanted to change the title of the app and have it automatically change the text of our <code>h1</code> tag, we can do the following:</p><pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.setState({
     title: <span class="hljs-string">&apos;New Title&apos;</span>
 });</code></pre>
-<p>Running the code above would change the state which would automatically trigger another call to the <code>render</code> method.</p><p>Always remember, changing the state updates the component view (i.e. calls <code>render</code> again).</p><h2 id="properties">Properties</h2><p>...</p><hr><h2 id="resources--other-links">Resources &amp; Other Links</h2><p>...</p>
+<p>Running the code above would change the state which would automatically trigger another call to the <code>render</code> method.</p><p>Always remember, changing the state updates the component view (i.e. calls <code>render</code> again).</p><h2 id="properties-aka-props">Properties (aka <code>props</code>)</h2><p><strong>Remember:</strong> The main responsibility of the component is to translate raw data into rich a UI with HTML.</p><p>The <code>props</code> and <code>state</code> of a component represent the raw data of the component.</p><p>It can be a bit difficult to grasp the difference between the two but before discussing the difference, let&apos;s talk a little about <code>props</code>.</p><ul><li><code>props</code> can be thought of as the configuration of a component as it&apos;s being called or used in JSX.
+</li>
+<li>They are non-changable (immutable) from the perspective of the component receiving them.
+</li>
+<li>Changes in <code>props</code>, as with <code>state</code>, trigged an update in the component.
+</li></ul>
+<p>HTML tags have attributes which could be thought of as the equivelant of <code>props</code>, for example an <code>&lt;img /&gt;</code> tag has attributes such as <code>src</code>.</p><p>Like the <code>&lt;img /&gt;</code> tag, if we had a <code>&lt;SideNav /&gt;</code> component, one of its props could <code>items</code> which would be an array containing the navigation items:</p><pre><code>&lt;SideNav items=[&apos;item 1&apos;, &apos;another&apos;, &apos;one more&apos;] /&gt;</code></pre>
+<p>Now, from within our hypothetical <code>SideNav</code> component, we can refer to the items as follows:</p><pre><code>this.props.items</code></pre>
+<hr><h2 id="resources--other-links">Resources &amp; Other Links</h2><h4 id="state-vs-props"><a href="https://github.com/uberVU/react-guide/blob/master/props-vs-state.md" target="_blank">State vs. Props</a></h4>
                                 
                                 </section>
                             
@@ -475,7 +470,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Component State & Props","level":"1.5.1","depth":2,"next":{"title":"Component Lifecycle","level":"1.5.2","depth":2,"path":"chapter_2/__05_component_lifecycle.md","ref":"chapter_2/__05_component_lifecycle.md","articles":[]},"previous":{"title":"Chapter 2: Working with ReactJS Components","level":"1.5","depth":1,"path":"chapter_2/README.md","ref":"chapter_2/README.md","articles":[{"title":"Component State & Props","level":"1.5.1","depth":2,"path":"chapter_2/__10_component_props.md","ref":"chapter_2/__10_component_props.md","articles":[]},{"title":"Component Lifecycle","level":"1.5.2","depth":2,"path":"chapter_2/__05_component_lifecycle.md","ref":"chapter_2/__05_component_lifecycle.md","articles":[]},{"title":"createClass vs extends","level":"1.5.3","depth":2,"path":"chapter_2/__20_create_class_vs_extends.md","ref":"chapter_2/__20_create_class_vs_extends.md","articles":[]},{"title":"Passing Data Between Components","level":"1.5.4","depth":2,"path":"chapter_2/__30_passing_data_between_components.md","ref":"chapter_2/__30_passing_data_between_components.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_2/__10_component_props.md","mtime":"2016-08-27T05:30:00.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-28T00:52:23.381Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Component State & Props","level":"1.5.1","depth":2,"next":{"title":"Component Lifecycle","level":"1.5.2","depth":2,"path":"chapter_2/__05_component_lifecycle.md","ref":"chapter_2/__05_component_lifecycle.md","articles":[]},"previous":{"title":"Chapter 2: Working with ReactJS Components","level":"1.5","depth":1,"path":"chapter_2/README.md","ref":"chapter_2/README.md","articles":[{"title":"Component State & Props","level":"1.5.1","depth":2,"path":"chapter_2/__10_component_props.md","ref":"chapter_2/__10_component_props.md","articles":[]},{"title":"Component Lifecycle","level":"1.5.2","depth":2,"path":"chapter_2/__05_component_lifecycle.md","ref":"chapter_2/__05_component_lifecycle.md","articles":[]},{"title":"createClass vs extends","level":"1.5.3","depth":2,"path":"chapter_2/__20_create_class_vs_extends.md","ref":"chapter_2/__20_create_class_vs_extends.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapter_2/__10_component_props.md","mtime":"2016-08-28T01:22:48.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-28T01:44:48.169Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

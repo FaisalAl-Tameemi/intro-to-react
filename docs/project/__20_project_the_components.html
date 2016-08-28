@@ -186,7 +186,7 @@
                 <a href="../chapter_1/__40_component_hierarchy.html">
             
                     
-                    Component Hierarchy
+                    Components
             
                 </a>
             
@@ -284,19 +284,6 @@
             
                     
                     createClass vs extends
-            
-                </a>
-            
-
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5.4" data-path="../chapter_2/__30_passing_data_between_components.html">
-            
-                <a href="../chapter_2/__30_passing_data_between_components.html">
-            
-                    
-                    Passing Data Between Components
             
                 </a>
             
@@ -412,7 +399,69 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h2 id="components-walk-through">Components Walk Through</h2><p>Before going through this section, try to build the components on your own and see how far you can get.</p><p>Research the parts you don&apos;t know how to do and use this section as your reference from one approach.</p><h3 id="appjsx">App.jsx</h3><p>This is the main component that render on the page. From it, we will render everything else.</p><p>We can call this the a root node or root component.</p><pre><code class="lang-javascript"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">App</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">Component</span> </span>{
+  render() {
+    <span class="hljs-keyword">return</span> (
+      &lt;div className=&apos;app-container&apos;&gt;
+        &lt;Toolbar title={this.state.title} /&gt;
+        &lt;BlogListContainer /&gt;
+      &lt;/div&gt;
+    );
+  }
+}</code></pre>
+<p>In this component, we are simply calling <code>Toolbar</code> and passing it the app title which we have stored in this component&apos;s state.</p><p>We are also calling the <code>BlogListContainer</code> which in turn will handle displaying both the contents and the sidenav list.</p><h3 id="toolbarjsx">Toolbar.jsx</h3><p>The <code>Toolbar</code> is a simple functional component which requires a title as a prop and nothing else.</p><p>Its render method is straight forward.</p><pre><code class="lang-javascript">render() {
+  <span class="hljs-comment">// in ES6</span>
+  <span class="hljs-keyword">const</span> { title } = <span class="hljs-keyword">this</span>.props;
+  <span class="hljs-comment">// in ES5</span>
+  <span class="hljs-comment">// var title = this.props.title;</span>
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&apos;rp-main-toolbar&apos;</span>&gt;</span>
+      <span class="hljs-tag">&lt;<span class="hljs-name">h1</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&apos;rp-toolbar-title&apos;</span>&gt;</span>
+        { title }
+      <span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+  );
+}</code></pre>
+<h3 id="bloglistcontainerjsx">BlogListContainer.jsx</h3><p>This is where the some of the magic will be happening.</p><p>As we discussed earlier, we will be using this component to communicate changes triggered by one component but effect another.</p><p>Before moving forward, let&apos;s have a look at the initial state of this components:</p><pre><code class="lang-javascript">{
+  selected_item: <span class="hljs-literal">null</span>,
+  items: []
+}</code></pre>
+<p>The <code>selected_item</code> will hold the object that is being displayed in the main content area. The <code>items</code> array will hold the entire list of items being displayed in the sidenav.</p><p><strong>Remember:</strong>
+<small>If we are using the ES6 way of creating classes (i.e. using <code>extends React.Component</code>), then we only ever set the state with <code>this.state = {...}</code> in the <code>constructor</code> method. Otherwise, we will use <code>this.setState</code> which works the same way no matter how you&apos;re creating your React classes / components.</small></p><p>For example, once we click an item on the sidenav, the content in the main area should change to reflect that interaction between the user and this app.</p><p>To achieve this, we will create a function <code>_onItemSelected</code> in the <code>BlogListContainer</code> class. Given an item object, this function is responsible for setting the state with the new <code>selected_item</code>.</p><pre><code class="lang-javascript">_onItemSelect(item){
+  <span class="hljs-keyword">this</span>.setState({
+    selected_item: item
+  });
+}</code></pre>
+<p>We will then pass that function as a prop to the sidenav, <code>BlogList</code>, such that when an item is clicked, the function gets called.</p><p>In <strong>BlogListContainer.jsx</strong>:</p><pre><code class="lang-javascript"><span class="hljs-keyword">const</span> list = (
+  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&apos;rp-bloglist-container&apos;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">BlogList</span>
+      <span class="hljs-attr">itemsList</span>=<span class="hljs-string">{this.state.items}</span>
+      <span class="hljs-attr">selectedItem</span>=<span class="hljs-string">{this.state.selected_item}</span>
+      <span class="hljs-attr">onItemSelect</span>=<span class="hljs-string">{(item)</span> =&gt;</span> this._onItemSelect(item)}
+      onItemDelete={(item) =&gt; this._onItemDelete(item)}
+    /&gt;
+  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
+);</span></code></pre>
+<p>In <strong>BlogList.jsx</strong>:</p><pre><code class="lang-javascript">render(){
+  <span class="hljs-keyword">return</span> (
+    <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">ul</span> <span class="hljs-attr">className</span>=<span class="hljs-string">&apos;rp-bloglist&apos;</span>&gt;</span>
+      {
+        this.props.itemsList.map((item) =&gt; {
+          return (
+            <span class="hljs-tag">&lt;<span class="hljs-name">li</span>
+              <span class="hljs-attr">key</span>=<span class="hljs-string">{item.id}</span>
+              <span class="hljs-attr">className</span>=<span class="hljs-string">&apos;rp-bloglist-item&apos;</span>
+              <span class="hljs-attr">onClick</span>=<span class="hljs-string">{()</span> =&gt;</span> this.props.onItemSelect(item)}
+            &gt;
+              { item.title }
+            <span class="hljs-tag">&lt;/<span class="hljs-name">li</span>&gt;</span>
+          )
+        })
+      }
+    <span class="hljs-tag">&lt;/<span class="hljs-name">ul</span>&gt;</span></span>
+  );
+}</code></pre>
+<p>This will in turn change the state of the container and refresh the content as the selected item has now changed, illustrated below:</p><p>![Blog List Preview][bloglist_container_steps]</p><h3 id="bloglistjsx">BlogList.jsx</h3><p>In this component we will simply <code>.map</code> over all the items that are being pass as the <code>itemList</code> prop and turn each item into an <code>li</code> element.</p><h3 id="blogcontentjsx">BlogContent.jsx</h3><p>A functional component that simply renders the item that is passed to it as a prop.</p>
                                 
                                 </section>
                             
@@ -455,7 +504,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Components Walkthrough","level":"1.6.2","depth":2,"next":{"title":"Next Steps","level":"1.7","depth":1,"path":"next-steps.md","ref":"next-steps.md","articles":[]},"previous":{"title":"Components Breakdown","level":"1.6.1","depth":2,"path":"project/__10_project_components_breakdown.md","ref":"project/__10_project_components_breakdown.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/__20_project_the_components.md","mtime":"2016-08-27T04:50:33.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-28T00:52:23.381Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Components Walkthrough","level":"1.6.2","depth":2,"next":{"title":"Next Steps","level":"1.7","depth":1,"path":"next-steps.md","ref":"next-steps.md","articles":[]},"previous":{"title":"Components Breakdown","level":"1.6.1","depth":2,"path":"project/__10_project_components_breakdown.md","ref":"project/__10_project_components_breakdown.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"project/__20_project_the_components.md","mtime":"2016-08-28T01:40:02.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-28T01:44:48.169Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
