@@ -51,9 +51,22 @@ It can be a bit difficult to grasp the difference between the two but before dis
 - They are non-changable (immutable) from the perspective of the component receiving them.
 - Changes in `props`, as with `state`, trigged an update in the component.
 
+HTML tags have attributes which could be thought of as the equivelant of `props`, for example an `<img />` tag has attributes such as `src`.
+
+Like the `<img />` tag, if we had a `<SideNav />` component, one of its props could `items` which would be an array containing the navigation items:
+
+```
+<SideNav items=['item 1', 'another', 'one more'] />
+```
+
+Now, from within our hypothetical `SideNav` component, we can refer to the items as follows:
+
+```
+this.props.items
+```
 
 ----
 
 ## Resources & Other Links
 
-...
+#### [State vs. Props](https://github.com/uberVU/react-guide/blob/master/props-vs-state.md)
