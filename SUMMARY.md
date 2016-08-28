@@ -15,7 +15,6 @@
     * [Component State & Props](chapter_2/__10_component_props.md)
     * [Component Lifecycle](chapter_2/__05_component_lifecycle.md)
     * [createClass vs extends](chapter_2/__20_create_class_vs_extends.md)
-    * [Passing Data Between Components](chapter_2/__30_passing_data_between_components.md)
 * [Project: ReactJS Blog Viewer](project/README.md)
     * [Components Breakdown](project/__10_project_components_breakdown.md)
     * [Components Walkthrough](project/__20_project_the_components.md)
