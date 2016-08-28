@@ -27,10 +27,9 @@ Below is a snapshot of my info and how to reach me.
     city: 'Toronto',
     country: 'Canada',
     interests: ['Education', 'Engineering', 'Data', 'Design', 'Entrepreneurship'],
-    github_url: '',
-    linkedin_url: '',
-    twitter_url: 'http://twitter.com/FaisalAlTameemi',
-    blog_url: '',
+    github_url: 'https://github.com/FaisalAl-Tameemi',
+    linkedin_url: 'https://www.linkedin.com/in/faisalaltameemi',
+    twitter_url: 'https://twitter.com/FaisalAlTameemi',
     email: 'faisal@lighthouselabs.ca'
 }
 ```
