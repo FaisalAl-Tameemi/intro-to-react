@@ -2,13 +2,13 @@
 
 ### TLDR;
 
-There are 2 way to create components in ReactJS. 
+There are 2 ways to create components in ReactJS. 
 
-1. `.createClass` - This way of creating components uses a built in React method to create the class and pass to it an object.
+1. `.createClass` is a React method for creating a Class to represent a component. It takes an object as a parameter which contains all the component's methods.
 
-2. `extends Component` - This way of creating components uses ES6 classes which inherit from the base React Component
+2. `extends Component` - This way of creating components uses ES6 classes which inherit from the base React Component to do the same task mentioned above.
 
-You are definetly encouraged to read Todd Motto's article (linked in resources below) to understand the difference in much more detail.
+You are encouraged to read Todd Motto's article (linked in resources below) to understand the difference in much more detail.
 
 We will be used the ES6 style way (i.e. with `extends Component`) in this document.
 
