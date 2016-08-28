@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [About](about.md)
+* [Author](about.md)
 * [List of Contents](list-of-contents.md)
 * [Chapter 1: Intro To ReactJS](chapter_1/README.md)
     * [What Is ReactJS?](chapter_1/__10_what_is_reactjs.md)
