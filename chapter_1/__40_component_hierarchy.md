@@ -1,4 +1,4 @@
-# Component Hierarchy
+# Components Breakdown
 
 In order to leverage the power of ReactJS and use it to build large web applications, you must learn to break down your applications into smaller pieces, each doing exactly what it needs to do and not more.
 
@@ -6,8 +6,7 @@ This process of dividing up the tasks of your entire application among reusable 
 
 It is also important to note that this isn't the only way to build scalable web applications but it is certainly a pattern that is being adopted by Javascript MVC frameworks such as Angular2.
 
-
-## Components Breakdown
+## Practice
 
 Let's quickly practice this way of thinking about our web applications. 
 
