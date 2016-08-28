@@ -6,7 +6,7 @@ This process of dividing up the tasks of your entire application among reusable 
 
 It is also important to note that this isn't the only way to build scalable web applications but it is certainly a pattern that is being adopted by Javascript MVC frameworks such as Angular2.
 
-## Practice
+## Components Breakdown
 
 Let's quickly practice this way of thinking about our web applications. 
 
