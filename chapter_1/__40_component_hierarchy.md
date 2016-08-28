@@ -1,4 +1,4 @@
-# Components Breakdown
+# Components
 
 In order to leverage the power of ReactJS and use it to build large web applications, you must learn to break down your applications into smaller pieces, each doing exactly what it needs to do and not more.
 
