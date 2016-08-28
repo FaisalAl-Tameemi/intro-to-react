@@ -39,9 +39,17 @@ Running the code above would change the state which would automatically trigger 
 Always remember, changing the state updates the component view (i.e. calls `render` again).
 
 
-## Properties 
+## Properties (aka `props`)
 
-...
+__Remember:__ The main responsibility of the component is to translate raw data into rich a UI with HTML.
+
+The `props` and `state` of a component represent the raw data of the component.
+
+It can be a bit difficult to grasp the difference between the two but before discussing the difference, let's talk a little about `props`.
+
+- `props` can be thought of as the configuration of a component as it's being called or used in JSX.
+- They are non-changable (immutable) from the perspective of the component receiving them.
+- Changes in `props`, as with `state`, trigged an update in the component.
 
 
 ----
